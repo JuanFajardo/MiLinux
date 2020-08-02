@@ -1,6 +1,6 @@
 # Apache
 
-## SSl Activado
+## SSL Activado
 
 __Instalar Apache2 OpenSSL__
 
@@ -64,3 +64,28 @@ __Activar VirtualHost__
         SSLCertificateKeyFile   /etc/ssl/certs/sitio.key
 </VirtualHost>
 ```
+
+
+## VirtualHost
+
+__Activar VirtualHost__
+
+```bash 
+# touch /etc/apache2/sites-avalible/misitio.bo.conf
+```
+
+```html
+<VirtualHost *:80>
+        Alias /pagina /home/bett0/html/dominio/public/
+        ServerAdmin webmaster@localhost
+        ServerName dominio.bo
+        DocumentRoot /home/bett0/html/dominio/
+</VirtualHost>
+```
+
+```bash 
+# a2ensite /etc/apache2/sites-avalible/misitio.bo.conf
+
+#  a2dissite /etc/apache2/sites-avalible/misitio.bo.conf
+```
+
