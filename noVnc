@@ -1,0 +1,17 @@
+https://github.com/novnc/noVNC
+
+# apt install x11vnc
+
+$ x11vnc -storedpasswd
+
+$ x11vnc -userpw -forever
+
+
+
+
+$ git clone https://github.com/novnc/noVNC.git
+
+$ cd noVNC
+
+$ ./utils/launch.sh --vnc localhost:5901
+
