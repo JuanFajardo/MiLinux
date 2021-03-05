@@ -14,6 +14,18 @@ __Activar SSL Apache2__
 # a2enmod ssl
 ```
 
+__Mostrar Dominios__
+
+```bash
+# apachectl -S
+```
+
+__Mostrar archivos en Falla__
+
+```bash
+# apachectl -t
+```
+
 __Reiniciar Apache2__
 
 ```bash 
